@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fynx - Sustainable Fashion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <nav>
+    <div><a href="C:\Users\Chandan Kumar H H\OneDrive\Desktop\lad\landing_page.html" style="text-decoration:none; color:var(--pink); font-weight:bold;">Fynx</a></div>
+    <input type="text" placeholder="Search..." />
+    <ul>
+      <li><a href="C:\Users\Chandan Kumar H H\OneDrive\Desktop\lad\landing_page.html">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="toggle-dark" onclick="toggleDark()">🌙</span>
+  </nav>
+
+  <div class="section">
+    <button class="btn btn-purple" onclick="alert('Sign up clicked!')">Sign Up</button>
+    <button class="btn btn-pink" onclick="openModal()">Login</button>
+  </div>
+
+  <div class="section hero-box">
+    <h1>JUST FOR <span style="color: var(--pink)">YOU</span></h1>
+    <p>Discover a whole new way to dress with Fynx — where style meets sustainability.</p>
+    <button class="btn btn-pink">Explore Now</button>
+  </div>
+
+  <div class="promo">
+    <h2>FOR ONLINE ORDERS</h2>
+    <p style="font-size: 2em; color: var(--pink); font-weight: bold;">30% OFF</p>
+    <p>Rent it. Wear it. Return it. Fashion has never been this easy.</p>
+    <button class="btn">Order Now</button>
+  </div>
+
+  <div class="section reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review">"Amazing quality and service! Highly recommend Fynx!"</div>
+    <div class="review">"Sustainable fashion at its best. Love my new outfit!"</div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:support@fynx.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2025 Fynx. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+  <div id="loginModal" class="modal-bg">
+    <div class="modal-content">
+      <h3>Login to Fynx</h3>
+      <button class="btn" onclick="alert('Google Login')">Login with Google</button>
+      <button class="btn btn-purple" onclick="alert('Facebook Login')">Login with Facebook</button>
+      <hr>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <div style="margin-top: 10px;">
+        <button class="btn btn-pink">Login</button>
+        <button class="btn" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle('dark');
+    }
+    function openModal() {
+      document.getElementById('loginModal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('loginModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+
